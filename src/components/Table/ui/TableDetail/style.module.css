@@ -1,0 +1,45 @@
+.tableDetail {
+	display: grid;
+	grid-template-columns: 360px minmax(0, 932px);
+	align-items: start;
+	gap: 15px;
+	padding: 15px;
+	background: var(--gray-gray-1);
+	border-radius: 15px;
+}
+
+.tableDetailCont {
+	background: var(--gra-white);
+	padding: 10px;
+}
+
+.clientDetail {
+	display: grid;
+	grid-template-columns: 44px 1fr;
+	gap: 15px;
+}
+
+.navigator {
+	display: grid;
+	gap: 10px;
+	align-content: start;
+}
+
+.navigator button {
+	width: 44px;
+	height: 44px;
+	border-radius: 10px;
+	background: var(--gray-white);
+	box-shadow: 0 4px 9px 0 #a39fc112, 0 16px 16px 0 #a39fc10f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navigator button svg {
+	color: var(--gray-gray-3);
+}
+
+.navigator button.active svg {
+	color: var(--brand-blue-main);
+}

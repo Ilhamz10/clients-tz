@@ -1,0 +1,15 @@
+.col {
+	display: flex;
+	align-items: center;
+}
+
+.col.head {
+	color: var(--gray-black);
+	font: var(--monitor-h3);
+}
+
+.col.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

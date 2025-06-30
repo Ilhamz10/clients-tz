@@ -1,0 +1,54 @@
+.wrapperForTable {
+	padding: 24px;
+	background: var(--gray-white);
+	box-shadow: 0 4px 9px 0 #a39fc112, 0 16px 16px 0 #a39fc10f;
+	border-radius: 15px;
+	display: grid;
+	gap: 10px;
+}
+
+.title {
+	font: var(--monitor-h1);
+	text-align: center;
+}
+
+.statusBtn {
+	border: 1px solid #dfe1e6;
+	color: #c1c3c8;
+	background: white !important;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.actionsInput {
+	display: grid;
+	align-items: center;
+	grid-template-columns: auto auto;
+	gap: 20px;
+}
+
+.searchInput {
+	display: grid;
+	grid-template-columns: 16px 1fr;
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid var(--gray-gray-2);
+	width: 250px;
+	gap: 8px;
+	align-items: center;
+}
+
+.searchInput input {
+	border: none;
+	outline: none;
+	font: var(--monitor-h3);
+	color: var(--gray-black);
+}
+
+.searchInput input::placeholder {
+	color: var(--gray-gray-3);
+}

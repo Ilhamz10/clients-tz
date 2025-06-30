@@ -1,0 +1,13 @@
+.table {
+	box-shadow: 0 10px 23px 0 #b6b9d314, 0 42px 42px 0 #b6b9d312,
+		0 93px 56px 0 #b6b9d30a, 0 166px 66px 0 #b6b9d303;
+	border-radius: 15px;
+	border: 1px solid #cdd5e8;
+	overflow: auto;
+}
+
+.clientNameCol {
+	display: grid;
+	grid-template-columns: 35px 1fr;
+	gap: 20px;
+}

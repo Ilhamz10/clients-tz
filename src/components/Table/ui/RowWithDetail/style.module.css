@@ -1,0 +1,40 @@
+.rowWithDetail {
+	cursor: pointer;
+}
+
+.clientName {
+	display: grid;
+	grid-template-columns: 47px 1fr;
+	gap: 10px;
+	align-items: center;
+}
+
+.clientName .indicatorCont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.indicatorCont .indicator {
+	width: 12px;
+	height: 12px;
+	background: var(--brand-green-main);
+	border-radius: 99px;
+}
+
+.actions {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	align-items: center;
+	gap: 17px;
+	max-width: max-content;
+	margin: 0 auto;
+}
+
+.actions button {
+	color: #c1c3c8;
+}
+
+.tableDetail {
+    overflow: hidden;
+}

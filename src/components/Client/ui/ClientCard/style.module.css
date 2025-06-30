@@ -1,0 +1,65 @@
+.card {
+	display: grid;
+	gap: 8px;
+	padding: 15px;
+	border-radius: 10px;
+	background: var(--gray-white);
+	box-shadow: 0 4px 9px 0 #a39fc112, 0 16px 16px 0 #a39fc10f;
+}
+
+.card > div {
+	display: grid;
+	gap: 8px;
+}
+
+.cardSubTitle {
+	font: var(--monitor-h3);
+}
+
+.cardTitle {
+	font: var(--monitor-h1);
+}
+
+.key {
+	color: var(--neutral-800);
+	font: var(--monitor-b2);
+}
+
+.value {
+	color: var(--gray-black);
+	font: var(--monitor-h3);
+}
+
+.value:has(img) {
+	display: flex;
+	align-items: center;
+}
+
+.value:has(img) img {
+	margin-right: 10px;
+}
+
+.cardInfo {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+
+.balanceInfo .cardSubTitle {
+	display: grid;
+	grid-template-columns: auto auto;
+	max-width: max-content;
+	gap: 10px;
+	color: var(--neutral-800);
+}
+
+.cardBtns {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: center;
+}
+
+.balanceInfo .cardTitle {
+	padding: 10px 0;
+}

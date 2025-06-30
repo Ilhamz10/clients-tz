@@ -1,0 +1,27 @@
+.btn {
+	padding: 12.5px 23px;
+	font: var(--monitor-b3);
+	color: var(--gray-white);
+	border-radius: 10px;
+}
+
+.btn.secondary {
+	background: var(--brand-blue-gray);
+	color: #8291b5;
+}
+
+.btn.primary {
+	background: var(--brand-blue-main);
+}
+
+.btn.withIcon {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 21px;
+	align-items: center;
+}
+
+.btn:disabled {
+	background: var(--gray-gray-3);
+	cursor: not-allowed;
+}

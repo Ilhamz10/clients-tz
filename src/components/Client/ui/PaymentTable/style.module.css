@@ -1,0 +1,55 @@
+.clientTable {
+	width: 100%;
+	border: 1px solid #cdd5e8;
+	border-radius: 9px;
+	overflow: auto;
+}
+
+.actions {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	align-items: center;
+	gap: 17px;
+	max-width: max-content;
+	margin: 0 auto;
+}
+
+.actions button {
+	color: #c1c3c8;
+}
+
+.spend,
+.profit {
+	justify-content: center;
+	font: var(--monitor-b2);
+	color: var(--gray-black);
+}
+
+.titleCol {
+	display: grid;
+	grid-template-columns: 27px 1fr;
+	gap: 8.8px;
+}
+
+.titleCont .title {
+	font: var(--monitor-b3);
+	color: var(--gray-black);
+}
+
+.titleCont .id {
+	font: var(--monitor-c1);
+	color: var(--gray-black);
+}
+
+.indicator {
+	width: 12px;
+	height: 12px;
+	background: var(--brand-green-main);
+	border-radius: 99px;
+}
+
+.indicatorCont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

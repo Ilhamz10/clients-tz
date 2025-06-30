@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+}
+
+:root {
+	--monitor-h1: 600 20px/100% 'Montserrat', sans-serif;
+	--monitor-h2: 600 18px/100% 'Montserrat', sans-serif;
+	--monitor-h3: 600 15px/100% 'Montserrat', sans-serif;
+	--monitor-b2: 500 14px/100% 'Montserrat', sans-serif;
+	--monitor-b3: 500 12px/100% 'Montserrat', sans-serif;
+	--monitor-c1: 400 10px/100% 'Montserrat', sans-serif;
+
+	--gray-gray-1: #f3f5fa;
+	--gray-gray-2: #dfe1e6;
+	--gray-gray-3: #c1c3c8;
+	--gray-gray-4: #717378;
+	--gray-black: #333333;
+	--gray-white: #ffffff;
+	--brand-blue-main: #2a32ed;
+	--brand-green-main: #68db3b;
+	--brand-red-main: #ed2a2a;
+	--brand-blue-gray: #cdd5e8;
+	--neutral-800: #454545;
+}
+
+body {
+	background: var(--gray-gray-1);
+	padding: 100px;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+	font-size: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.line {
+	height: 1px;
+	background: #e7e7e7;
+}
+
+.error {
+	color: var(--brand-red-main) !important;
+}
+
+.success {
+	color: var(--brand-green-main) !important;
+}
+
+.blue {
+	color: var(--brand-blue-main) !important;
+}

@@ -1,0 +1,17 @@
+.col {
+	padding: 16.5px 0px;
+	font: var(--monitor-b2);
+	color: #323130;
+}
+
+.col.center {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.col.head {
+	font: var(--monitor-h2);
+	color: var(--gray-black);
+}

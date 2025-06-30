@@ -1,0 +1,18 @@
+.row {
+	display: grid;
+	grid-template-columns:
+		200px minmax(0, 148px) minmax(0, 145px) minmax(0, 143px)
+		1fr;
+	height: 40px;
+	width: 100%;
+	box-shadow: 0 -1px 0 0 #cdd5e8;
+	background: var(--gray-white);
+	padding: 0 10px;
+	gap: 8.8px;
+}
+
+.row.head {
+	height: 48px;
+	box-shadow: none;
+	background: #fafcff;
+}

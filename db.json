@@ -1,0 +1,90 @@
+{
+	"clients": [
+		{
+			"id": 1,
+			"name": "Client One",
+			"start_date": "2024-01-01",
+			"offers": 3,
+			"account_manager": "Alice Johnson",
+			"sales_manager": "Bob Smith",
+			"status": "active",
+			"type_of_client": "Webmaster",
+			"experience": "Expert",
+			"monthly_budgets": "$10,000",
+			"balance": {
+				"balance_usd": 1000,
+				"balance_rub": 140000
+			},
+			"loans": 140000
+		},
+		{
+			"id": 2,
+			"name": "Client Two",
+			"start_date": "2023-09-15",
+			"offers": 2,
+			"account_manager": "Carol Danvers",
+			"sales_manager": "Steve Rogers",
+			"status": "archived",
+			"type_of_client": "Advertiser",
+			"experience": "Noob",
+			"monthly_budgets": "$3,000",
+			"balance": {
+				"balance_usd": 500,
+				"balance_rub": 70000
+			},
+			"loans": 50000
+		}
+	],
+	"offers": [
+		{
+			"id": 1,
+			"clientId": 1,
+			"title": "Summer Campaign",
+			"sources": ["tiktok", "instagram"],
+			"spend": 5000,
+			"profit": 15000
+		},
+		{
+			"id": 2,
+			"clientId": 1,
+			"title": "Autumn Push",
+			"sources": ["facebook", "google"],
+			"spend": 3000,
+			"profit": 7000
+		},
+		{
+			"id": 3,
+			"clientId": 2,
+			"title": "Brand Awareness",
+			"sources": ["tiktok"],
+			"spend": 1000,
+			"profit": 2500
+		}
+	],
+	"payment_terms": [
+		{
+			"id": 1,
+			"clientId": 1,
+			"payment_method": "Wire Transfer",
+			"exchange_extras": 1.5,
+			"vat": 20,
+			"start_date": "2024-01-10"
+		},
+		{
+			"id": 2,
+			"clientId": 1,
+			"payment_method": "Crypto",
+			"exchange_extras": 0.5,
+			"vat": 0,
+			"start_date": "2024-02-01"
+		},
+		{
+			"id": 3,
+			"clientId": 2,
+			"payment_method": "Card",
+			"exchange_extras": 2.0,
+			"vat": 18,
+			"start_date": "2023-10-10"
+		}
+	]
+}

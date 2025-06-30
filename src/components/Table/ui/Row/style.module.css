@@ -1,0 +1,13 @@
+.row {
+	display: grid;
+	grid-template-columns: 370px repeat(5, 1fr);
+	padding: 0 15px;
+	background: var(--gray-white);
+	box-shadow: 0 -1px 0 0 #cdd5e8;
+	cursor: pointer;
+}
+
+.row.head {
+	background: #fafcff;
+	box-shadow: none;
+}
