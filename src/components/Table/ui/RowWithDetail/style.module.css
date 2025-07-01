@@ -18,8 +18,14 @@
 .indicatorCont .indicator {
 	width: 12px;
 	height: 12px;
-	background: var(--brand-green-main);
+	background: var(--gray-gray-4);
+	opacity: 0.28;
 	border-radius: 99px;
+}
+
+.indicatorCont .indicator.active {
+	background: var(--brand-green-main);
+	opacity: 1;
 }
 
 .actions {
@@ -36,5 +42,5 @@
 }
 
 .tableDetail {
-    overflow: hidden;
+	overflow: hidden;
 }

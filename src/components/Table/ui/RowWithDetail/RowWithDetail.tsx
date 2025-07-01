@@ -8,6 +8,7 @@ import PenIcon from '@/assets/icons/pen-icon.svg';
 import TrashIcon from '@/assets/icons/trash-icon.svg';
 import { motion } from 'motion/react';
 import type { Client } from '@/app/types';
+import classNames from 'classnames';
 
 const detailVariants = {
 	open: {
@@ -36,7 +37,11 @@ const RowWithDetail: FC<Props> = ({ client }) => {
 			<Row onClick={openDetail}>
 				<Col className={cls.clientName}>
 					<div className={cls.indicatorCont}>
-						<div className={cls.indicator} />
+						<div
+							className={classNames(cls.indicator, {
+								[cls.active]: client.status === 'active',
+							})}
+						/>
 					</div>
 					{client.name}
 				</Col>

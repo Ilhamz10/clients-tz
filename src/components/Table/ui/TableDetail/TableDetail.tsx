@@ -18,7 +18,12 @@ export const TableDetail: FC<Props> = ({ clientId }) => {
 	const { data, isLoading, isSuccess, isError } = useGetClientById(clientId);
 
 	const renderClientCard = useCallback(() => {
-		if (isLoading) return <p>Loadin....</p>;
+		if (isLoading)
+			return (
+				<div className='loader-cont'>
+					<div className='loader' />
+				</div>
+			);
 
 		if (isSuccess) return <ClientCard client={data} />;
 

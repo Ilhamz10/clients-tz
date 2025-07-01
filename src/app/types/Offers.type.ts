@@ -5,4 +5,5 @@ export interface Offer {
 	sources: string[];
 	spend: number;
 	profit: number;
+	status: 'active' | 'archived';
 }

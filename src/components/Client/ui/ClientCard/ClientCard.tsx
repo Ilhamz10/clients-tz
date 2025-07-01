@@ -11,7 +11,9 @@ interface Props {
 const ClientCard: FC<Props> = ({ client }) => {
 	return (
 		<div className={cls.card}>
-			<h2 className={classNames(cls.cardTitle, 'blue')}>CLICK BAZA</h2>
+			<h2 className={classNames(cls.cardTitle, 'blue')}>
+				{client.name.toUpperCase()}
+			</h2>
 			<div className='line' />
 			<div>
 				<div className={cls.cardInfo}>
@@ -34,7 +36,11 @@ const ClientCard: FC<Props> = ({ client }) => {
 				</div>
 				<div className={cls.cardInfo}>
 					<p className={cls.key}>Status</p>
-					<p className={classNames(cls.value, 'success')}>
+					<p
+						className={classNames(cls.value, {
+							success: client.status === 'active',
+							archived: client.status === 'archived',
+						})}>
 						{client.status.toUpperCase()}
 					</p>
 				</div>

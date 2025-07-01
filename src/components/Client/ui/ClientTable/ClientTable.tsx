@@ -6,26 +6,46 @@ import cls from './style.module.css';
 import EyeIcon from '@/assets/icons/eye-icon.svg';
 import PenIcon from '@/assets/icons/pen-icon.svg';
 import TrashIcon from '@/assets/icons/trash-icon.svg';
+import classNames from 'classnames';
+import { socailMediaIcons } from '@/app/const/icons/socialMedia';
 
 const ClientTable = ({ clientId }: { clientId?: number }) => {
 	const { data, isLoading, isError, isSuccess } = useGetOffers(clientId);
 
 	const renderOffersTable = useCallback(() => {
-		if (isLoading) return <p>Loadin....</p>;
+		if (isLoading)
+			return (
+				<div className='loader-cont'>
+					<div className='loader' />
+				</div>
+			);
 
 		if (isSuccess)
 			return data.map((offer) => (
 				<ClientTableRow key={offer.id}>
 					<ClientTableCol className={cls.titleCol}>
 						<div className={cls.indicatorCont}>
-							<div className={cls.indicator} />
+							<div
+								className={classNames(cls.indicator, {
+									[cls.active]: offer.status === 'active',
+								})}
+							/>
 						</div>
 						<div className={cls.titleCont}>
 							<p className={cls.title}>{offer.title}</p>
 							<p className={cls.id}>ID {offer.id}</p>
 						</div>
 					</ClientTableCol>
-					<ClientTableCol center>Sources</ClientTableCol>
+					<ClientTableCol center className={cls.sources}>
+						{offer.sources.map(
+							(icon, idx) => idx < 3 && socailMediaIcons[icon]
+						)}
+						{offer.sources.length > 3 && (
+							<div className={cls.sourceCounter}>
+								+{offer.sources.length - 3}
+							</div>
+						)}
+					</ClientTableCol>
 					<ClientTableCol className={cls.spend}>${offer.spend}</ClientTableCol>
 					<ClientTableCol className={cls.profit}>
 						${offer.profit}

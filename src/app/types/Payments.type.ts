@@ -5,4 +5,5 @@ export interface Payment {
 	exchange_extras: number;
 	vat: number;
 	start_date: string;
+	status: 'active' | 'archived';
 }

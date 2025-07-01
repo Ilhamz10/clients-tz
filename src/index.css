@@ -61,3 +61,35 @@ a {
 .blue {
 	color: var(--brand-blue-main) !important;
 }
+
+.archived {
+	color: var(--gray-gray-4);
+	opacity: 0.5;
+}
+
+.loader-cont {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+.loader {
+	width: 48px;
+	height: 48px;
+	border: 5px solid #000;
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	display: inline-block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -10,7 +10,11 @@ const Table = () => {
 
 	const renderClients = useCallback(() => {
 		if (isLoading) {
-			return <p>Loading...</p>;
+			return (
+				<div className='loader-cont'>
+					<div className='loader' />
+				</div>
+			);
 		}
 
 		if (isSuccess) {

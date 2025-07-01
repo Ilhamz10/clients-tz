@@ -42,7 +42,8 @@
 			"title": "Summer Campaign",
 			"sources": ["tiktok", "instagram"],
 			"spend": 5000,
-			"profit": 15000
+			"profit": 15000,
+			"status": "active"
 		},
 		{
 			"id": 2,
@@ -50,15 +51,17 @@
 			"title": "Autumn Push",
 			"sources": ["facebook", "google"],
 			"spend": 3000,
-			"profit": 7000
+			"profit": 7000,
+			"status": "active"
 		},
 		{
 			"id": 3,
 			"clientId": 2,
 			"title": "Brand Awareness",
-			"sources": ["tiktok"],
+			"sources": ["tiktok", "facebook", "google", "facebook", "google"],
 			"spend": 1000,
-			"profit": 2500
+			"profit": 2500,
+			"status": "archived"
 		}
 	],
 	"payment_terms": [
@@ -68,7 +71,8 @@
 			"payment_method": "Wire Transfer",
 			"exchange_extras": 1.5,
 			"vat": 20,
-			"start_date": "2024-01-10"
+			"start_date": "2024-01-10",
+			"status": "active"
 		},
 		{
 			"id": 2,
@@ -76,7 +80,8 @@
 			"payment_method": "Crypto",
 			"exchange_extras": 0.5,
 			"vat": 0,
-			"start_date": "2024-02-01"
+			"start_date": "2024-02-01",
+			"status": "archived"
 		},
 		{
 			"id": 3,
@@ -84,7 +89,8 @@
 			"payment_method": "Card",
 			"exchange_extras": 2.0,
 			"vat": 18,
-			"start_date": "2023-10-10"
+			"start_date": "2023-10-10",
+			"status": "active"
 		}
 	]
 }

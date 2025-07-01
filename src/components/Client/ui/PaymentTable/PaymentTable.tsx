@@ -6,19 +6,29 @@ import cls from './style.module.css';
 import EyeIcon from '@/assets/icons/eye-icon.svg';
 import PenIcon from '@/assets/icons/pen-icon.svg';
 import TrashIcon from '@/assets/icons/trash-icon.svg';
+import classNames from 'classnames';
 
 const PaymentTable = ({ clientId }: { clientId?: number }) => {
 	const { data, isLoading, isSuccess, isError } = useGetPayments(clientId);
 
 	const renderPaymentsTable = useCallback(() => {
-		if (isLoading) return <p>Loadin....</p>;
+		if (isLoading)
+			return (
+				<div className='loader-cont'>
+					<div className='loader' />
+				</div>
+			);
 
 		if (isSuccess)
 			return data.map((payment) => (
 				<ClientTableRow key={payment.id}>
 					<ClientTableCol className={cls.titleCol}>
 						<div className={cls.indicatorCont}>
-							<div className={cls.indicator} />
+							<div
+								className={classNames(cls.indicator, {
+									[cls.active]: payment.status === 'active',
+								})}
+							/>
 						</div>
 						<div className={cls.titleCont}>
 							<p className={cls.title}>{payment.payment_method}</p>
