@@ -8,7 +8,7 @@ import PenIcon from '@/assets/icons/pen-icon.svg';
 import TrashIcon from '@/assets/icons/trash-icon.svg';
 import classNames from 'classnames';
 
-const PaymentTable = ({ clientId }: { clientId?: number }) => {
+export const PaymentTable = ({ clientId }: { clientId?: number }) => {
 	const { data, isLoading, isSuccess, isError } = useGetPayments(clientId);
 
 	const renderPaymentsTable = useCallback(() => {
@@ -80,5 +80,3 @@ const PaymentTable = ({ clientId }: { clientId?: number }) => {
 		</div>
 	);
 };
-
-export default PaymentTable;

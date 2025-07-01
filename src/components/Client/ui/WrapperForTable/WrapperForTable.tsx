@@ -9,7 +9,7 @@ interface Props extends PropsWithChildren {
 	mode: 'offers' | 'payment';
 }
 
-const WrapperForTable: FC<Props> = ({ mode, children }) => {
+export const WrapperForTable: FC<Props> = ({ mode, children }) => {
 	return (
 		<div className={cls.wrapperForTable}>
 			<h2 className={cls.title}>
@@ -33,5 +33,3 @@ const WrapperForTable: FC<Props> = ({ mode, children }) => {
 		</div>
 	);
 };
-
-export default WrapperForTable;

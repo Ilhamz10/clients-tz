@@ -9,7 +9,7 @@ import TrashIcon from '@/assets/icons/trash-icon.svg';
 import classNames from 'classnames';
 import { socailMediaIcons } from '@/app/const/icons/socialMedia';
 
-const ClientTable = ({ clientId }: { clientId?: number }) => {
+export const ClientTable = ({ clientId }: { clientId?: number }) => {
 	const { data, isLoading, isError, isSuccess } = useGetOffers(clientId);
 
 	const renderOffersTable = useCallback(() => {
@@ -90,5 +90,3 @@ const ClientTable = ({ clientId }: { clientId?: number }) => {
 		</div>
 	);
 };
-
-export default ClientTable;

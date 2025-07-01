@@ -5,7 +5,7 @@ import RowWithDetail from '../RowWithDetail/RowWithDetail';
 import cls from './style.module.css';
 import { useCallback } from 'react';
 
-const Table = () => {
+export const Table = () => {
 	const { data, isLoading, isSuccess, isError } = useGetClients();
 
 	const renderClients = useCallback(() => {
@@ -57,5 +57,3 @@ const Table = () => {
 		</div>
 	);
 };
-
-export default Table;

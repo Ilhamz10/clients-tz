@@ -8,7 +8,7 @@ interface Props {
 	client: Client;
 }
 
-const ClientCard: FC<Props> = ({ client }) => {
+export const ClientCard: FC<Props> = ({ client }) => {
 	return (
 		<div className={cls.card}>
 			<h2 className={classNames(cls.cardTitle, 'blue')}>
@@ -85,5 +85,3 @@ const ClientCard: FC<Props> = ({ client }) => {
 		</div>
 	);
 };
-
-export default ClientCard;

@@ -1,13 +1,11 @@
-import ClientCard from '@/components/Client/ui/ClientCard/ClientCard';
-import cls from './style.module.css';
-import ClientTable from '@/components/Client/ui/ClientTable/ClientTable';
-import WrapperForTable from '@/components/Client/ui/WrapperForTable/WrapperForTable';
-import LabelIcon from '@/assets/icons/label-icon.svg';
-import BankIcon from '@/assets/icons/bank-icon.svg';
-import { useCallback, useState, type FC } from 'react';
+import { ClientCard, ClientTable, PaymentTable, WrapperForTable } from '@/components/Client/ui';
 import classNames from 'classnames';
-import PaymentTable from '@/components/Client/ui/PaymentTable/PaymentTable';
-import { useGetClientById } from '../../hooks/useClients';
+import { useGetClientById } from '../../hooks';
+import { useCallback, useState, type FC } from 'react';
+
+import cls from './style.module.css';
+import BankIcon from '@/assets/icons/bank-icon.svg';
+import LabelIcon from '@/assets/icons/label-icon.svg';
 
 interface Props {
 	clientId?: number;

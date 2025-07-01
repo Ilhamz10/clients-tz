@@ -1,7 +1,6 @@
 import { useState, type FC } from 'react';
 import Col from '../Col/Col';
 import Row from '../Row/Row';
-import { TableDetail } from '../TableDetail/TableDetail';
 import cls from './style.module.css';
 import EyeIcon from '@/assets/icons/eye-icon.svg';
 import PenIcon from '@/assets/icons/pen-icon.svg';
@@ -9,6 +8,7 @@ import TrashIcon from '@/assets/icons/trash-icon.svg';
 import { motion } from 'motion/react';
 import type { Client } from '@/app/types';
 import classNames from 'classnames';
+import { TableDetail } from '../TableDetail/TableDetail';
 
 const detailVariants = {
 	open: {

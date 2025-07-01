@@ -12,10 +12,11 @@
 	text-align: center;
 }
 
-.statusBtn {
+.actions .actionsInput .statusBtn {
 	border: 1px solid #dfe1e6;
 	color: #c1c3c8;
-	background: white !important;
+	background: white;
+	font: var(--monitor-h3);
 }
 
 .actions {

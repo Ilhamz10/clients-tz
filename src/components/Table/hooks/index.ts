@@ -1,1 +1,1 @@
-export { useGetClients } from './useClients';
+export { useGetClients, useGetClientById } from './useClients';
