@@ -29,5 +29,6 @@ or
 
 This will serve the contents of the dist folder at http://localhost:4173
 
-For running json-server for mock backend you should run `npx json-server db.json`.
+To run json-server for your mock backend, use: `npx json-server db.json`.
+
 The backend will be available at: http://localhost:3000
